@@ -1,0 +1,15 @@
+name: Classroom50 Autograde
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  statuses: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  autograde:
+    uses: JHU-EP-705-603-CVA/classroom50/.github/workflows/autograde-runner.yaml@main
